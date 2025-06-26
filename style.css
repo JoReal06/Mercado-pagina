@@ -1,0 +1,219 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --color__principal: #21325E;
+    --color__secundario: #f1d00a;
+    --color__complementario: #f0f0f0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 150px;
+    display: flex;
+    margin-left: 10PX;
+}
+
+.logo img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.nav{
+    padding: 9px 0;
+    background: linear-gradient(135deg ,var(--color__secundario)  20%, var(--color__principal)50%);
+    display: flex;
+    justify-content: space-between;
+}
+.nav__ul{
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+}
+
+.nav__ul li{
+
+}
+
+.nav__ul a{
+    border-radius: 10px;
+    padding: 10px 18px;
+    background-color:var(--color__secundario);
+    color: #111;
+}
+
+
+/* PARTE DE PROMO */
+.promo {
+  background-image: url('WhatsApp\ Image\ 2025-06-17\ at\ 19.30.41_94bd7a82.jpg'); /* usa tu imagen real */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Capa oscura sutil encima de la imagen */
+.promo__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* oscurecimiento leve */
+  z-index: 1;
+}
+
+/* Contenedor del texto */
+.promo__texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra el texto */
+  z-index: 2;
+  text-align: center;
+}
+
+.promo__texto h2 {
+  font-size: 56px; /* más grande */
+  padding: 16px 32px;
+  background-color:var(--color__complementario); 
+  color: #111;
+  border-radius: 10px;
+}
+
+
+
+
+/* producto */
+
+.coint{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.Producto {
+    min-width: 400px;
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.3s ease;
+}
+
+.Producto:hover {
+  transform: translateY(-5px);
+}
+
+.Producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.Producto h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.Producto p {
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+
+/* promociones */
+.promociones {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.promo-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.promo-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.promo-card h3 {
+  color: #0055aa;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.promo-card span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* footer */
+.footer {
+  background-color: #111c2f;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer__contenido p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer__social a {
+  color: #fdd835;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+.footer__social a:hover {
+  text-decoration: underline;
+}
