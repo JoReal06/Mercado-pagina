@@ -9,13 +9,16 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="logo">
-            <img src="Screenshot 2025-06-26 045337.png" alt="">
-        </div>
-        <ul class="nav__ul">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
-        </ul>
+    <div class="logo">
+        <img src="Screenshot 2025-06-26 045337.png" alt="">
+    </div>
+
+    <button class="nav__toggle" id="toggleMenu">☰</button> <!-- Botón hamburguesa -->
+
+    <ul class="nav__ul" id="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+    </ul>
     </nav>
 
     <div class="promo">
@@ -106,6 +109,14 @@
     </footer>
 
 
+<script>
+  const toggleBtn = document.getElementById('toggleMenu');
+  const navMenu = document.getElementById('navMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
 
 
 </body>

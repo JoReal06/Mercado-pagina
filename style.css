@@ -29,28 +29,59 @@ a{
     max-width: 100%;
 }
 
-.nav{
-    padding: 9px 0;
-    background: linear-gradient(135deg ,var(--color__secundario)  20%, var(--color__principal)50%);
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 20px;
+  background: linear-gradient(135deg ,var(--color__secundario) 20%, var(--color__principal) 50%);
+  flex-wrap: wrap;
+}
+
+.nav__ul {
+  display: flex;
+  gap: 14px;
+  padding: 20px;
+  list-style: none;
+}
+
+.nav__ul a {
+  border-radius: 10px;
+  padding: 10px 18px;
+  background-color: var(--color__secundario);
+  color: #111;
+  text-decoration: none;
+}
+
+/* Botón hamburguesa oculto en escritorio */
+.nav__toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive ↓ */
+@media (max-width: 768px) {
+  .nav__ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+    background-color: var(--color__secundario);
+  }
+
+  .nav__ul.show {
     display: flex;
-    justify-content: space-between;
-}
-.nav__ul{
-    display: flex;
-    gap: 14px;
-    padding: 20px;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
 }
 
-.nav__ul li{
-
-}
-
-.nav__ul a{
-    border-radius: 10px;
-    padding: 10px 18px;
-    background-color:var(--color__secundario);
-    color: #111;
-}
 
 
 /* PARTE DE PROMO */
